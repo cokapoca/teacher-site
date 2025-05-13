@@ -1,0 +1,17 @@
+{
+    "home": "Welcome to the Teacher's Website",
+    "news": "Great News",
+    "news_text": "It's already warm!",
+    "about": "Southern Federal University",
+    "contact": "Contact Information",
+    "contact_phone": "+7 908 517 50 43",
+    "products": "Products and Services",
+    "header_links": {
+        "home": "Home",
+        "news": "News",
+        "about": "About",
+        "contact": "Contact",
+        "products": "Products"
+    },
+    "footer": "Teacher's Site. Created by Developer."
+}

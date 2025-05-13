@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #000;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header {
+    background: green;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .logo {
+    height: 80%;
+}
+
+.header nav {
+    position: absolute;
+    right: 20px;
+}
+
+.header nav a,
+.section nav a {
+    margin: 0 10px;
+    color: #000;
+    text-decoration: underline;
+}
+
+.header nav select {
+    margin-left: 10px;
+}
+
+.main {
+    display: flex;
+    flex: 1;
+    min-height: 89vh;
+}
+
+.section {
+    background: gold;
+    width: 20%;
+    padding: 10px;
+}
+
+.article {
+    background: blue;
+    width: 60%;
+    padding: 20px;
+    color: #fff;
+}
+
+.article h1 {
+    margin-bottom: 20px;
+}
+
+.article p,
+.article form,
+.article table {
+    margin-bottom: 15px;
+}
+
+.article table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.article table th,
+.article table td {
+    border: 1px solid #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+.article form textarea {
+    width: 100%;
+    padding: 10px;
+}
+
+.article form button {
+    padding: 10px;
+    background: #28a745;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.aside {
+    background: darkturquoise;
+    width: 20%;
+    padding: 10px;
+}
+
+.aside .tags,
+.aside .banner {
+    margin: 10px 0;
+}
+
+.footer {
+    background: red;
+    height: 6vh;
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+}
+
+@media (max-width: 800px) {
+    .main {
+        flex-direction: column;
+    }
+
+    .section,
+    .article,
+    .aside {
+        width: 100%;
+    }
+
+    .header nav {
+        position: static;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
